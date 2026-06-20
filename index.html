@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs Project 1 | The Responsive Architecture</title>
+    <!-- Google Fonts: Inter (Headlines) and Roboto (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout-wrapper">
+        <!-- Header / Nav Container -->
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="logo">DecodeLabs</div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Navigation" id="menuToggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sidebar (Hidden on mobile by default, shown on larger screens) -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="sidebar-link">
+                    <span class="icon">📊</span>
+                    <span class="text">Dashboard</span>
+                </a>
+                <a href="#projects" class="sidebar-link active">
+                    <span class="icon">🚀</span>
+                    <span class="text">Projects</span>
+                </a>
+                <a href="#analytics" class="sidebar-link">
+                    <span class="icon">📈</span>
+                    <span class="text">Analytics</span>
+                </a>
+                <a href="#settings" class="sidebar-link">
+                    <span class="icon">⚙️</span>
+                    <span class="text">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <article class="hero-content">
+                    <h1>The Future of Digital Craft</h1>
+                    <p>Design is an iterative process that blends precision with empathy. Build user-friendly experiences that work seamlessly on any device through pure responsive logic.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+            </section>
+
+            <!-- Content Grid (Cards) -->
+            <section class="content-grid" id="about">
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');"></div>
+                    <div class="card-body">
+                        <h2>Semantic Integrity</h2>
+                        <p>Code for AI and Accessibility using proper HTML5 landmark elements.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2569&auto=format&fit=crop');"></div>
+                    <div class="card-body">
+                        <h2>Responsive Strategy</h2>
+                        <p>Mobile-first layouts leveraging CSS Grid and Flexbox for fluidity.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2670&auto=format&fit=crop');"></div>
+                    <div class="card-body">
+                        <h2>2025 Aesthetics</h2>
+                        <p>Warmth, grounding, and inclusive visual design paradigms.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>&copy; 2026 DecodeLabs | Industrial Training Kit | Project 1</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
